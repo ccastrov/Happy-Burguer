@@ -1,0 +1,10 @@
+TICKET DE PEDIDO
+    --------------------
+    Código del pedido: 253
+    Código del cliente: 111
+    Código del producto: 222
+    Cantidad: 5
+    --------------------
+    ¡Gracias por su pedido!
+
+    

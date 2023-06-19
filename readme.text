@@ -1,0 +1,40 @@
+Explicación del Proyecto
+
+    Este proyecto tiene como objetivo proporcionar una interfaz web y en la consola para la consulta de pedidos. 
+    Permite a los usuarios ingresar el número de pedido y obtener los detalles del mismo, incluyendo el
+    cliente asociado y los productos pedidos.
+
+    El proyecto utiliza Flask como framework para el desarrollo web y SQLite como base de datos para almacenar 
+    la información de los pedidos.
+
+    Estructura del Proyecto:
+
+    - app.py: Contiene el código principal del servidor Flask y las rutas para manejar las consultas de pedidos.
+    -main.py: Contiene los menus principales para agregar datos a la base de datos
+    - pedido.py: Define la clase Pedido y la clase Database para la manipulación de pedidos y la interacción
+    -menu.py: Define la clase Producto y la clase ManejoMenu para las opciones: agregar producto y 
+    eliminar producto junto con la clase Database para que se agreguen los registros en la base de datos.
+    con la base de datos.
+    - consulta_pedido.html: Plantilla HTML para la página de consulta de pedidos.
+    - mi_base_de_datos.db: Archivo de base de datos SQLite que almacena la información de los pedidos.
+
+    Cómo utilizar la aplicacion:
+
+    
+    Servidor de Flask:
+    1. Ejecute el archivo app.py para iniciar el servidor Flask.
+    2. Abra un navegador web y acceda a la dirección http://localhost:5000 para cargar la página de consulta 
+    de pedidos.
+    3. Ingrese el número de pedido y haga clic en el botón "Consultar".
+    4. Si el pedido existe, se mostrarán los detalles del pedido. De lo contrario, se mostrará un mensaje
+    de error.
+    
+    En consola:
+    1. Dar click en el boton play de Visual Estudio
+    2. Elegir las opciones del menu principal segun sea el caso
+    3. La opcion 1 Crear Pedido tiene las opciones:crear Pedido y cancelar pedido, en la creacion del pedido simula
+    la impresion de un ticket el cual irá ingresando en el archivo pedido_222.txt
+    4. La opcion 2 Clientes tiene las opciones: Agregar Cliente, Eliminar Cliente, Actualizar Cliente
+    5. La opcion 5 Menu tien las opciones: Agregar producto al menú, Eliminar producto del Menu, Actualizar producto
+    6. Todas las sub-opciones tienes la opcion de regresar al menu principal y en el menu principal esta la opcion
+    salir.

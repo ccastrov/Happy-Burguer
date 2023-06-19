@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Pedido</title>
+</head>
+<body>
+    <h1>Consulta de Pedido</h1>
+    <form action="/pedido/{{ codigo_pedido }}" method="GET">
+
+
+
+
+        <label for="codigo_pedido">Número de Pedido:</label>
+        <input type="text" id="codigo_pedido" name="codigo_pedido">
+        <button type="submit">Consultar</button>
+    </form>
+
+    {% if pedido %}
+    <h2>Detalles del Pedido:</h2>
+    <p>Número de Pedido: {{ pedido.codigo_pedido }}</p>
+    <p>Cliente: {{ pedido.cliente }}</p>
+    <p>Productos:</p>
+    <ul>
+        {% for producto in pedido.productos %}
+        <li>{{ producto.nombre }} - {{ producto.precio }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
